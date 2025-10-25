@@ -1,0 +1,32 @@
+﻿  AsyncServer.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+  IOThreadPool.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+  LogicSystem.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+  Server.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+  Session.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+E:\boostasio-Learn\AsyncServer\Session.cpp(44,20): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\boostasio-Learn\AsyncServer\Session.cpp(72,20): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\boostasio-Learn\AsyncServer\Session.cpp(109,35): warning C4267: “+=”: 从“size_t”转换到“short”，可能丢失数据
+E:\boostasio-Learn\AsyncServer\Session.cpp(151,34): warning C4267: “+=”: 从“size_t”转换到“short”，可能丢失数据
+E:\boostasio-Learn\AsyncServer\Session.cpp(198,33): warning C4267: “+=”: 从“size_t”转换到“short”，可能丢失数据
+  正在生成代码...
+  AsyncServer.vcxproj -> E:\boostasio-Learn\AsyncServer\x64\Debug\AsyncServer.exe

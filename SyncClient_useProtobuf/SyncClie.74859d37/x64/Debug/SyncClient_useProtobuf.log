@@ -1,0 +1,132 @@
+﻿  SyncClient_useProtobuf.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+E:\cppsoft\protoc\include\google\protobuf\stubs\status.h(97,15): warning C4251: “google::protobuf::util::status_internal::Status::error_message_”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“google::protobuf::util::status_internal::Status”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\Microsoft Visual Studio\2022\Community_IDE\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\stubs\logging.h(100,15): warning C4251: “google::protobuf::internal::LogMessage::message_”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“google::protobuf::internal::LogMessage”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\Microsoft Visual Studio\2022\Community_IDE\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\io\coded_stream.h(1275,28): warning C4251: “google::protobuf::io::CodedOutputStream::default_serialization_deterministic_”:“std::atomic<bool>”需要有 dll 接口以供“google::protobuf::io::CodedOutputStream”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\Microsoft Visual Studio\2022\Community_IDE\VC\Tools\MSVC\14.44.35207\include\atomic(2131,8):
+      参见“std::atomic<bool>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\arena_impl.h(401,23): warning C4251: “google::protobuf::internal::SerialArena::space_allocated_”:“std::atomic<unsigned __int64>”需要有 dll 接口以供“google::protobuf::internal::SerialArena”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\Microsoft Visual Studio\2022\Community_IDE\VC\Tools\MSVC\14.44.35207\include\atomic(2131,8):
+      参见“std::atomic<unsigned __int64>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\arena_impl.h(532,29): warning C4251: “google::protobuf::internal::ThreadSafeArena::alloc_policy_”:“google::protobuf::internal::TaggedAllocationPolicyPtr”需要有 dll 接口以供“google::protobuf::internal::ThreadSafeArena”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\cppsoft\protoc\include\google\protobuf\arena_impl.h(123,7):
+      参见“google::protobuf::internal::TaggedAllocationPolicyPtr”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\arena_impl.h(537,29): warning C4251: “google::protobuf::internal::ThreadSafeArena::threads_”:“std::atomic<google::protobuf::internal::SerialArena *>”需要有 dll 接口以供“google::protobuf::internal::ThreadSafeArena”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\Microsoft Visual Studio\2022\Community_IDE\VC\Tools\MSVC\14.44.35207\include\atomic(2131,8):
+      参见“std::atomic<google::protobuf::internal::SerialArena *>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\arena_impl.h(538,29): warning C4251: “google::protobuf::internal::ThreadSafeArena::hint_”:“std::atomic<google::protobuf::internal::SerialArena *>”需要有 dll 接口以供“google::protobuf::internal::ThreadSafeArena”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\Microsoft Visual Studio\2022\Community_IDE\VC\Tools\MSVC\14.44.35207\include\atomic(2131,8):
+      参见“std::atomic<google::protobuf::internal::SerialArena *>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\arena_impl.h(660,30): warning C4251: “google::protobuf::internal::ThreadSafeArena::arena_stats_”:“google::protobuf::internal::ThreadSafeArenaStatsHandle”需要有 dll 接口以供“google::protobuf::internal::ThreadSafeArena”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\cppsoft\protoc\include\google\protobuf\arenaz_sampler.h(159,7):
+      参见“google::protobuf::internal::ThreadSafeArenaStatsHandle”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\arenastring.h(82,43): warning C4251: “google::protobuf::internal::LazyString::inited_”:“std::atomic<const std::string *>”需要有 dll 接口以供“google::protobuf::internal::LazyString”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\Microsoft Visual Studio\2022\Community_IDE\VC\Tools\MSVC\14.44.35207\include\atomic(2131,8):
+      参见“std::atomic<const std::string *>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\arenastring.h(367,19): warning C4251: “google::protobuf::internal::ArenaStringPtr::tagged_ptr_”:“google::protobuf::internal::TaggedStringPtr”需要有 dll 接口以供“google::protobuf::internal::ArenaStringPtr”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\cppsoft\protoc\include\google\protobuf\arenastring.h(97,7):
+      参见“google::protobuf::internal::TaggedStringPtr”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\metadata_lite.h(307,15): warning C4251: “google::protobuf::internal::LiteUnknownFieldSetter::buffer_”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“google::protobuf::internal::LiteUnknownFieldSetter”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\Microsoft Visual Studio\2022\Community_IDE\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\generated_message_util.h(194,20): warning C4251: “google::protobuf::internal::CachedSize::size_”:“std::atomic<int>”需要有 dll 接口以供“google::protobuf::internal::CachedSize”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\Microsoft Visual Studio\2022\Community_IDE\VC\Tools\MSVC\14.44.35207\include\atomic(2131,8):
+      参见“std::atomic<int>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\stubs\mutex.h(136,40): warning C4251: “google::protobuf::internal::WrappedMutex::mu_”:“google::protobuf::internal::CallOnceInitializedMutex<std::mutex>”需要有 dll 接口以供“google::protobuf::internal::WrappedMutex”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\cppsoft\protoc\include\google\protobuf\stubs\mutex.h(98,7):
+      参见“google::protobuf::internal::CallOnceInitializedMutex<std::mutex>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\descriptor.h(2063,27): warning C4251: “google::protobuf::DescriptorPool::tables_”:“std::unique_ptr<google::protobuf::DescriptorPool::Tables,std::default_delete<google::protobuf::DescriptorPool::Tables>>”需要有 dll 接口以供“google::protobuf::DescriptorPool”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\Microsoft Visual Studio\2022\Community_IDE\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      参见“std::unique_ptr<google::protobuf::DescriptorPool::Tables,std::default_delete<google::protobuf::DescriptorPool::Tables>>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\descriptor.h(2073,31): warning C4251: “google::protobuf::DescriptorPool::unused_import_track_files_”:“std::map<std::string,bool,std::less<std::string>,std::allocator<std::pair<const std::string,bool>>>”需要有 dll 接口以供“google::protobuf::DescriptorPool”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\Microsoft Visual Studio\2022\Community_IDE\VC\Tools\MSVC\14.44.35207\include\map(72,7):
+      参见“std::map<std::string,bool,std::less<std::string>,std::allocator<std::pair<const std::string,bool>>>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\io\zero_copy_stream_impl_lite.h(247,30): warning C4251: “google::protobuf::io::CopyingInputStreamAdaptor::buffer_”:“std::unique_ptr<uint8_t [],std::default_delete<uint8_t []>>”需要有 dll 接口以供“google::protobuf::io::CopyingInputStreamAdaptor”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\Microsoft Visual Studio\2022\Community_IDE\VC\Tools\MSVC\14.44.35207\include\memory(3486,7):
+      参见“std::unique_ptr<uint8_t [],std::default_delete<uint8_t []>>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\io\zero_copy_stream_impl_lite.h(338,30): warning C4251: “google::protobuf::io::CopyingOutputStreamAdaptor::buffer_”:“std::unique_ptr<uint8_t [],std::default_delete<uint8_t []>>”需要有 dll 接口以供“google::protobuf::io::CopyingOutputStreamAdaptor”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\Microsoft Visual Studio\2022\Community_IDE\VC\Tools\MSVC\14.44.35207\include\memory(3486,7):
+      参见“std::unique_ptr<uint8_t [],std::default_delete<uint8_t []>>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\unknown_field_set.h(211,29): warning C4251: “google::protobuf::UnknownFieldSet::fields_”:“std::vector<google::protobuf::UnknownField,std::allocator<google::protobuf::UnknownField>>”需要有 dll 接口以供“google::protobuf::UnknownFieldSet”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\Microsoft Visual Studio\2022\Community_IDE\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      参见“std::vector<google::protobuf::UnknownField,std::allocator<google::protobuf::UnknownField>>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\extension_set.h(1057,26): warning C4251: “google::protobuf::internal::RepeatedPrimitiveDefaults::default_repeated_field_int32_t_”:“google::protobuf::RepeatedField<int32_t>”需要有 dll 接口以供“google::protobuf::internal::RepeatedPrimitiveDefaults”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\cppsoft\protoc\include\google\protobuf\repeated_field.h(1193,78):
+      参见“google::protobuf::RepeatedField<int32_t>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\extension_set.h(1058,26): warning C4251: “google::protobuf::internal::RepeatedPrimitiveDefaults::default_repeated_field_int64_t_”:“google::protobuf::RepeatedField<int64_t>”需要有 dll 接口以供“google::protobuf::internal::RepeatedPrimitiveDefaults”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\cppsoft\protoc\include\google\protobuf\repeated_field.h(1195,78):
+      参见“google::protobuf::RepeatedField<int64_t>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\extension_set.h(1059,27): warning C4251: “google::protobuf::internal::RepeatedPrimitiveDefaults::default_repeated_field_uint32_t_”:“google::protobuf::RepeatedField<uint32_t>”需要有 dll 接口以供“google::protobuf::internal::RepeatedPrimitiveDefaults”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\cppsoft\protoc\include\google\protobuf\repeated_field.h(1194,79):
+      参见“google::protobuf::RepeatedField<uint32_t>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\extension_set.h(1060,27): warning C4251: “google::protobuf::internal::RepeatedPrimitiveDefaults::default_repeated_field_uint64_t_”:“google::protobuf::RepeatedField<uint64_t>”需要有 dll 接口以供“google::protobuf::internal::RepeatedPrimitiveDefaults”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\cppsoft\protoc\include\google\protobuf\repeated_field.h(1196,79):
+      参见“google::protobuf::RepeatedField<uint64_t>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\extension_set.h(1061,25): warning C4251: “google::protobuf::internal::RepeatedPrimitiveDefaults::default_repeated_field_double_”:“google::protobuf::RepeatedField<double>”需要有 dll 接口以供“google::protobuf::internal::RepeatedPrimitiveDefaults”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\cppsoft\protoc\include\google\protobuf\repeated_field.h(1198,77):
+      参见“google::protobuf::RepeatedField<double>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\extension_set.h(1062,24): warning C4251: “google::protobuf::internal::RepeatedPrimitiveDefaults::default_repeated_field_float_”:“google::protobuf::RepeatedField<float>”需要有 dll 接口以供“google::protobuf::internal::RepeatedPrimitiveDefaults”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\cppsoft\protoc\include\google\protobuf\repeated_field.h(1197,76):
+      参见“google::protobuf::RepeatedField<float>”的声明
+  
+E:\cppsoft\protoc\include\google\protobuf\extension_set.h(1063,23): warning C4251: “google::protobuf::internal::RepeatedPrimitiveDefaults::default_repeated_field_bool_”:“google::protobuf::RepeatedField<bool>”需要有 dll 接口以供“google::protobuf::internal::RepeatedPrimitiveDefaults”的客户端使用
+  (编译源文件“SyncClient_useProtobuf.cpp”)
+      E:\cppsoft\protoc\include\google\protobuf\repeated_field.h(1192,75):
+      参见“google::protobuf::RepeatedField<bool>”的声明
+  
+E:\boostasio-Learn\SyncClient_useProtobuf\SyncClient_useProtobuf.cpp(22,28): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  SyncClient_useProtobuf.vcxproj -> E:\boostasio-Learn\SyncClient_useProtobuf\x64\Debug\SyncClient_useProtobuf.exe

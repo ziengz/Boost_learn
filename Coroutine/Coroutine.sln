@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36327.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Coroutine", "Coroutine.vcxproj", "{4122829D-11FB-4F82-B92B-851258C401A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4122829D-11FB-4F82-B92B-851258C401A1}.Debug|x64.ActiveCfg = Debug|x64
+		{4122829D-11FB-4F82-B92B-851258C401A1}.Debug|x64.Build.0 = Debug|x64
+		{4122829D-11FB-4F82-B92B-851258C401A1}.Debug|x86.ActiveCfg = Debug|Win32
+		{4122829D-11FB-4F82-B92B-851258C401A1}.Debug|x86.Build.0 = Debug|Win32
+		{4122829D-11FB-4F82-B92B-851258C401A1}.Release|x64.ActiveCfg = Release|x64
+		{4122829D-11FB-4F82-B92B-851258C401A1}.Release|x64.Build.0 = Release|x64
+		{4122829D-11FB-4F82-B92B-851258C401A1}.Release|x86.ActiveCfg = Release|Win32
+		{4122829D-11FB-4F82-B92B-851258C401A1}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {052B7E36-BBB6-42A6-8964-8EAD4E27E9AC}
+	EndGlobalSection
+EndGlobal

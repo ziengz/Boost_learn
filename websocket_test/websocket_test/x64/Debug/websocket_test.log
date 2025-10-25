@@ -1,0 +1,6 @@
+﻿  ConnectionMgr.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+  websocket_test.vcxproj -> E:\boostasio-Learn\websocket_test\x64\Debug\websocket_test.exe

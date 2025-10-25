@@ -1,0 +1,79 @@
+﻿  httptest.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+E:\cppsoft\boost_1_88_0\boost\beast\http\impl\read.hpp(148,13): error C2338: static_assert failed: 'ReadHandler type requirements not met'
+  (编译源文件“httptest.cpp”)
+      E:\cppsoft\boost_1_88_0\boost\beast\http\impl\read.hpp(148,13):
+      模板实例化上下文(最早的实例化上下文)为
+          E:\boostasio-Learn\httptest\httptest.cpp(52,15):
+          查看对正在编译的函数 模板 实例化“boost::asio::detail::completion_handler_async_result<CompletionToken,void (boost::beast::error_code,size_t)>::return_type boost::beast::http::async_read<boost::asio::ip::tcp::socket,boost::beast::flat_buffer,false,boost::beast::http::dynamic_body,std::allocator<char>,http_connect::read_request::<lambda_1>>(AsyncReadStream &,DynamicBuffer &,boost::beast::http::message<false,boost::beast::http::dynamic_body,boost::beast::http::fields> &,ReadHandler &&)”的引用
+          with
+          [
+              CompletionToken=http_connect::read_request::<lambda_1>,
+              AsyncReadStream=boost::asio::ip::tcp::socket,
+              DynamicBuffer=boost::beast::flat_buffer,
+              ReadHandler=http_connect::read_request::<lambda_1>
+          ]
+          E:\cppsoft\boost_1_88_0\boost\beast\http\impl\read.hpp(719,17):
+          查看对正在编译的函数 模板 实例化“boost::asio::detail::completion_handler_async_result<CompletionToken,void (boost::beast::error_code,size_t)>::return_type boost::asio::async_initiate<http_connect::read_request::<lambda_1>,void(boost::beast::error_code,size_t),boost::beast::http::detail::run_read_msg_op<boost::asio::ip::tcp::socket>,DynamicBuffer*,boost::beast::http::message<false,boost::beast::http::dynamic_body,boost::beast::http::fields>*>(Initiation &&,http_connect::read_request::<lambda_1> &,DynamicBuffer *&&,boost::beast::http::message<false,boost::beast::http::dynamic_body,boost::beast::http::fields> *&&)”的引用
+          with
+          [
+              CompletionToken=http_connect::read_request::<lambda_1>,
+              DynamicBuffer=boost::beast::flat_buffer,
+              Initiation=boost::beast::http::detail::run_read_msg_op<boost::asio::ip::tcp::socket>
+          ]
+          E:\cppsoft\boost_1_88_0\boost\asio\async_result.hpp(649,65):
+          查看对正在编译的函数 模板 实例化“boost::asio::detail::completion_handler_async_result<CompletionToken,void (boost::beast::error_code,size_t)>::return_type boost::asio::detail::completion_handler_async_result<CompletionToken,void (boost::beast::error_code,size_t)>::initiate<Initiation,CompletionToken,DynamicBuffer*,boost::beast::http::message<false,boost::beast::http::dynamic_body,boost::beast::http::fields>*>(Initiation &&,RawCompletionToken &&,DynamicBuffer *&&,boost::beast::http::message<false,boost::beast::http::dynamic_body,boost::beast::http::fields> *&&)”的引用
+          with
+          [
+              CompletionToken=http_connect::read_request::<lambda_1>,
+              Initiation=boost::beast::http::detail::run_read_msg_op<boost::asio::ip::tcp::socket>,
+              DynamicBuffer=boost::beast::flat_buffer,
+              RawCompletionToken=http_connect::read_request::<lambda_1>
+          ]
+          E:\cppsoft\boost_1_88_0\boost\asio\async_result.hpp(329,31):
+          查看对正在编译的函数 模板 实例化“void boost::beast::http::detail::run_read_msg_op<boost::asio::ip::tcp::socket>::operator ()<CompletionToken,DynamicBuffer,false,boost::beast::http::dynamic_body,std::allocator<char>>(ReadHandler &&,DynamicBuffer *,boost::beast::http::message<false,boost::beast::http::dynamic_body,boost::beast::http::fields> *)”的引用
+          with
+          [
+              CompletionToken=http_connect::read_request::<lambda_1>,
+              DynamicBuffer=boost::beast::flat_buffer,
+              ReadHandler=http_connect::read_request::<lambda_1>
+          ]
+  
+E:\cppsoft\boost_1_88_0\boost\beast\http\impl\write.hpp(441,13): error C2338: static_assert failed: 'WriteHandler type requirements not met'
+  (编译源文件“httptest.cpp”)
+      E:\cppsoft\boost_1_88_0\boost\beast\http\impl\write.hpp(441,13):
+      模板实例化上下文(最早的实例化上下文)为
+          E:\boostasio-Learn\httptest\httptest.cpp(156,15):
+          查看对正在编译的函数 模板 实例化“boost::asio::detail::completion_handler_async_result<CompletionToken,void (boost::beast::error_code,size_t)>::return_type boost::beast::http::async_write<boost::asio::ip::tcp::socket,false,boost::beast::http::dynamic_body,boost::beast::http::fields,http_connect::write_response::<lambda_1>>(AsyncWriteStream &,const boost::beast::http::message<false,boost::beast::http::dynamic_body,boost::beast::http::fields> &,WriteHandler &&,void *)”的引用
+          with
+          [
+              CompletionToken=http_connect::write_response::<lambda_1>,
+              AsyncWriteStream=boost::asio::ip::tcp::socket,
+              WriteHandler=http_connect::write_response::<lambda_1>
+          ]
+          E:\cppsoft\boost_1_88_0\boost\beast\http\impl\write.hpp(913,17):
+          查看对正在编译的函数 模板 实例化“boost::asio::detail::completion_handler_async_result<CompletionToken,void (boost::beast::error_code,size_t)>::return_type boost::asio::async_initiate<http_connect::write_response::<lambda_1>,void(boost::beast::error_code,size_t),boost::beast::http::detail::run_write_msg_op<boost::asio::ip::tcp::socket>,const boost::beast::http::message<false,boost::beast::http::dynamic_body,boost::beast::http::fields>*,std::true_type>(Initiation &&,http_connect::write_response::<lambda_1> &,const boost::beast::http::message<false,boost::beast::http::dynamic_body,boost::beast::http::fields> *&&,std::true_type &&)”的引用
+          with
+          [
+              CompletionToken=http_connect::write_response::<lambda_1>,
+              Initiation=boost::beast::http::detail::run_write_msg_op<boost::asio::ip::tcp::socket>
+          ]
+          E:\cppsoft\boost_1_88_0\boost\asio\async_result.hpp(649,65):
+          查看对正在编译的函数 模板 实例化“boost::asio::detail::completion_handler_async_result<CompletionToken,void (boost::beast::error_code,size_t)>::return_type boost::asio::detail::completion_handler_async_result<CompletionToken,void (boost::beast::error_code,size_t)>::initiate<Initiation,CompletionToken,const boost::beast::http::message<false,boost::beast::http::dynamic_body,boost::beast::http::fields>*,std::true_type>(Initiation &&,RawCompletionToken &&,const boost::beast::http::message<false,boost::beast::http::dynamic_body,boost::beast::http::fields> *&&,std::true_type &&)”的引用
+          with
+          [
+              CompletionToken=http_connect::write_response::<lambda_1>,
+              Initiation=boost::beast::http::detail::run_write_msg_op<boost::asio::ip::tcp::socket>,
+              RawCompletionToken=http_connect::write_response::<lambda_1>
+          ]
+          E:\cppsoft\boost_1_88_0\boost\asio\async_result.hpp(329,31):
+          查看对正在编译的函数 模板 实例化“void boost::beast::http::detail::run_write_msg_op<boost::asio::ip::tcp::socket>::operator ()<CompletionToken,false,boost::beast::http::dynamic_body,boost::beast::http::fields,>(WriteHandler &&,const boost::beast::http::message<false,boost::beast::http::dynamic_body,boost::beast::http::fields> *,std::true_type)”的引用
+          with
+          [
+              CompletionToken=http_connect::write_response::<lambda_1>,
+              WriteHandler=http_connect::write_response::<lambda_1>
+          ]
+  
